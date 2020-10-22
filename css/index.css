@@ -1,0 +1,285 @@
+.header{
+   display: flex;
+   align-items: center;
+   line-height: 42px;
+   background: #E43130;
+   padding: 0 10px;
+}
+.header input{
+    flex: 1;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    text-indent: 20px;
+}
+.header span{
+    font-size: 26px;
+    color: #fff;
+}
+.header a{
+    color: #fff;
+    font-size: 18px;
+}
+.header a.active{
+    color: red;
+}
+
+/* 主体 */
+.main .banner{
+  height: 32vw;
+  background: #ccc;
+}
+.main .banner .swiper-slide img{
+    width: 100%;
+}
+/* 修改分页器样式 */
+.main .banner .swiper-pagination-bullet{
+    width: 10px;
+    height: 3px;
+    border-radius: 0px !important;
+    background: #fff;
+}
+/* 内容导航 */
+
+.nav-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px 0px 0px;
+}
+.nav-content li{
+    width: 20%;
+    padding: 8px;
+    box-sizing: border-box;
+    
+}
+.nav-content li a img{
+    
+    width: 100%;
+}
+.nav-content li a{
+    display: block;
+}
+.nav-content li a p{
+    text-align: center;
+    color: #b8b8b8;
+    font-size: 12px;
+
+}
+/* 修改导航内容分页 */
+nav .swiper-pagination-bullet{
+    width: 10px;
+    height: 3px;
+    border-radius: 0px !important;
+    background: #E43130;
+}
+/* 乐购秒杀 */
+.seckill{
+    padding: 5px;
+}
+.sk-content{
+    width: 100%;
+
+    background: #fff;
+    border-radius: 10px;
+    
+   
+}
+.content-head{
+    display: flex;
+    padding: 10px 3px;
+    align-items: center;
+   
+}
+.content-head p{
+    flex: 1;
+    margin: 0 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.content-head h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+.content-head a{
+    color: #E43130;
+}
+.sk-content ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8px;
+}
+.sk-content ul li{
+    width: 23%;
+    height: 119px;
+   
+   
+}
+.sk-content ul li a{
+    display: block;
+}
+.sk-content ul li a img{
+    width: 100%;
+}
+.sk-content ul li a p{
+    text-align: center;
+}
+.sk-content ul li a p span:first-child{
+    color: #E43130;
+    font-weight: bold;
+}
+.sk-content ul li a p span:last-child{
+    color: #000;
+}
+/* 新用户 */
+.new-user{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.new-user img{
+    width: 49%;
+    border-radius: 10px;
+}
+/* 每日逛 */
+
+.dailygo .dayily-logo img{
+    width: 100%;
+}
+.dailygo>div{
+    padding:0 5px;
+   
+}
+.daily-item{
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+.dailygo .daily-item li{
+    height: 100px;
+    width:24.76%;
+    background: #fff;
+    margin-bottom: 1px;
+    padding: 5px;
+    
+    box-sizing: border-box;
+}
+.dailygo .daily-item li h4{
+    text-align: center;
+    font-size: 16px;
+}
+.dailygo .daily-item li p{
+    text-align: center;
+}
+.dailygo .daily-item li:nth-child(odd) h4{
+     background: linear-gradient(90deg,#FF2A00, #FF00AF);
+     -webkit-background-clip: text;
+     color: transparent;
+}
+
+.dailygo .daily-item li:nth-child(even) h4{
+    background: linear-gradient(90deg,#2AD396, #85BB1F);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+.dailygo .daily-item li img{
+    width: 100%;
+    text-align: center;
+}
+/* 乐购快报 */
+.new{
+    padding: 10px 5px; 
+}
+.new .new-content{
+    height: 40px;
+    background: #fff;
+    display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+.new .new-content h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+.new .new-content>div{
+    flex: 1;
+    overflow: hidden;
+    margin: 0 5px;
+    height: 40px;
+    line-height: 40px;
+}
+.new-content .swiper-slide{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.new .new-content>div a{
+    font-size: 12px;
+    color: #000;
+}
+.new .new-content>div a span{
+    color: #E43130;
+}
+.new .new-content>a{
+    font-size: 12px;
+    color: #000;
+}
+/* 为你推荐 */
+.recommend{
+    padding: 0 5px;
+}
+.recommend .rec-logo{
+    background: #fff;
+    
+}
+.recommend .rec-logo img{
+    width: 100%;
+}
+.recommend .rec-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.recommend .rec-item li{
+    width: 48%;
+    height: 215px;
+    background: #fff;
+    margin-bottom: 5px;
+}
+.recommend .rec-item li a img{
+    width: 100%;
+}
+.recommend .rec-item li p{
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 占两行 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    padding: 2px 5px;
+    line-height: 17px;
+}
+.recommend .rec-item li>div{
+    display: flex;
+    justify-content:space-around;
+}
+.recommend .rec-item li>div p{
+    color: #E43130;
+}
+.recommend .rec-item li>div button{
+    width: 50px;
+    height: 20px;
+    border: 1px solid #ccc;
+    
+}
+

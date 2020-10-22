@@ -1,0 +1,167 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+body {
+  margin: 0;
+  background: #fff;
+}
+.header {
+  display: flex;
+  padding: 0 8px;
+  line-height: 45px;
+  border-bottom: 1px solid #f1f1f1;
+  align-items: center;
+}
+.header h4 {
+  font-size: 20px;
+  flex: 1;
+
+  text-align: center;
+}
+/* 购物车主体 */
+.car-list {
+  display: flex;
+  flex-direction: column;
+}
+.car-list li{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 5px;
+  position: relative;
+}
+/* 复选框 */
+/* .car-list .check {
+  align-self: center;
+  width: 10%;
+} */
+ .check input {
+  display: none;
+  outline: none;
+}
+ .check span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  color: transparent;
+}
+ .check input:checked+span {
+  background: red;
+  color: #fff;
+  border: none;
+}
+/* 图片 */
+.car-list .pic {
+  flex: 1;
+  display: flex;
+ padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+  
+}
+.car-list .pic .car-img {
+  width: 22vw;
+  height: 22vw;
+ margin:0 10px;
+  
+}
+.car-list .pic .car-img img {
+  width: 100%;
+}
+.car-list .pic .car-cont {
+  flex: 1;
+}
+.car-list .pic img {
+  width: 100%;
+}
+.car-list .pic .car-cont P:first-child {
+  line-height: 30px;
+  font-size: 16px;
+}
+.car-list .pic .car-cont P:nth-child(2) {
+  font-size: 12px;
+  color: #999ba1;
+  margin-bottom: 10px;
+}
+
+.car-list .pic .car-cont span {
+  font-size: 14px;
+  color: #e43130;
+ font-weight: bold;
+}
+.car-list .pro{
+    display: flex;
+    position: absolute;
+    top: 75px;
+    right: 16px;
+}
+.car-list .pro a{
+ display: inline-block;
+ width: 22px;
+ height: 20px;
+ border: 1px solid #666;
+ text-align: center;
+ line-height: 20px;
+}
+.car-list .pro input{
+    width: 30px;
+    height: 20px;
+    border: none;
+    border-top:1px solid #666 ;
+    border-bottom:1px solid #666 ;
+    text-align: center;
+}
+/* 购物车 */
+.shopcar{
+    
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    
+}
+.shopcar .car-chose{
+    display: flex;
+    align-items: center;
+   }
+/* .shopcar .car-chose span:last-of-type{
+    font-size: 16px;
+    
+} */
+.shopcar .car-chose p{
+  font-size: 16px;
+  margin-left: 6px;
+}
+.shopcar .total{
+   
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+}
+.shopcar .total span{
+    color: #e43130;
+    
+}
+.shopcar button{
+    line-height: 34px;
+    padding: 0 10px;
+    background: #e43130;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+

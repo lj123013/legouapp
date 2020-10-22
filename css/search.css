@@ -1,0 +1,39 @@
+html,body{ width: 100%; height: 100%; overflow: scroll;}
+html::-webkit-scrollbar, body::-webkit-scrollbar{width:0px;height:0px;}
+body{margin:0;}
+
+/* 主体 */
+.main{
+    
+    background: #fff;
+}
+.main .new-search{
+    display: flex;
+    padding: 30px 8px;
+    justify-content: space-between;
+    
+}
+.main .new-search h1{
+    font-size: 16px;
+}
+.main .new-search span{
+    color: #ccc;
+}
+ 
+.main .item{
+    width: 100%;
+   
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    padding: 0 8px 20px 8px;
+}
+    
+.main .item li{
+    background: #F0F2F5;
+    margin-right:10px ;
+    color: #686868;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+
+}

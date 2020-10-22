@@ -1,0 +1,65 @@
+/* 主体 */
+body {
+  background: #fff;
+}
+.main {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .aside {
+  width: 85px;
+  
+}
+.main .aside li {
+  height: 46px;
+  background: #f8f8f8;
+  text-align: center;
+  line-height: 46px;
+  font-size: 14px;
+}
+.main .aside li.active{
+    height: 46px;
+    width: 85px;
+    background: #fff;
+   
+}
+.main .aside li.active a{
+    color: red;
+}
+.main .content {
+  margin-left: 10px;
+  flex: 1;
+  overflow-y: scroll;
+  
+}
+/* 标题 */
+.main .content .title h2{
+    font-size: 14px;
+    line-height: 46px;
+    font-weight: bold;
+}
+/* 商品 */
+.main .content .item{
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.main .content .item li{
+    width: 33%;
+    text-align: center;
+    
+    
+}
+.main .content .item li a{
+    display: block;
+    
+}
+.main .content .item li a img{
+    width: 100%;
+}
+.main .content .item li a p{
+    font-size: 14px;
+    color: #000;
+}

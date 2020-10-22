@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索页面</title>
+    <!-- 引入重置css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入iconfont css -->
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入自己的样式 -->
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+<body>
+   <!-- 头部 -->
+   <header class="header">
+    <span class="iconfont icon-arrow-left" id="return"></span>
+    <div class="search">
+        <input type="search" placeholder="程序员假发" autofocus id="search-input">
+    <span class="iconfont icon-sousuo logo"></span>
+    </div>
+    
+    <button id="search-btn">搜索</button>
+   </header>
+   <!-- 主体 -->
+   <main class="main">
+       <div class="new-search">
+           <h1>最新搜索</h1>
+           <span class="iconfont icon-shanchu" id="del"></span>
+       </div>
+      <ul class="item">
+           
+          
+       </ul>
+   </main>
+ 
+     <!-- 引入jquery js -->
+     <script src="./lib/jquery/jquery.js"></script>
+     <!-- 引入自己js -->
+     <script src="./js/search.js"></script>
+     <!-- 引用公共js -->
+     <script src="./js/common.js"></script>
+</body>
+</html>
